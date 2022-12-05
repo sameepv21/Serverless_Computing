@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>File List</title>
+</head>
+
+<body>
+    <h1>File List</h1>
+    {% for file in files %}
+    <p>{{ file.function_name }}: <a href="{{ file.file.url }}">{{ file.file.name }}</a></p>
+    {% endfor %}
+</body>
+
+</html>
